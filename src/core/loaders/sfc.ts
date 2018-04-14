@@ -12,10 +12,9 @@ class SfcLoader implements Loader<ComponentOptions<Vue>, SfcCompiler> {
 
   public async load(url: string): Promise<ComponentOptions<Vue>> {
     const source: string = await this.network.request(url);
+    const options = this.compiler.compile(source);
 
-    return Promise.resolve({
-      template: source,
-    });
+    return Promise.resolve(options);
   }
 }
 

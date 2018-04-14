@@ -26,6 +26,7 @@
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-typescript": "^0.8.1",
     "rollup-watch": "^3.2.2",
+    "sfc-parser": "^0.1.0",
     "sssa": "^0.1.2",
     "tslint": "^5.9.1",
     "vue": "^2.5.16",

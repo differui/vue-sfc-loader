@@ -9,9 +9,6 @@ export default {
   entry: './src/index.ts',
   dest: './dest/bundle.js',
   format: 'cjs',
-  globals: {
-    vue: 'Vue',
-  },
   plugins: [
     alias({
       resolve: ['.ts'],

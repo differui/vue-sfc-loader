@@ -1,6 +1,8 @@
 const IDENTIFIERS = {
   SFC_COMPILER: Symbol('SFC_COMPILER'),
+  SSSA_COMPILER: Symbol('SSSA_COMPILER'),
   SFC_LOADER: Symbol('SFC_LOADER'),
+  SSSA_LOADER: Symbol('SSSA_LOADER'),
   NETWORK: Symbol('NETWORK'),
 };
 
