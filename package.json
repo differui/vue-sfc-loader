@@ -1,6 +1,6 @@
 {
   "name": "vue-sfc-loader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "vue sfc loader for browser",
   "main": "dest/bundle.js",
   "scripts": {
