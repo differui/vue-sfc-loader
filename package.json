@@ -17,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "^0.19.1",
+    "inversify": "^4.11.1",
     "reflect-metadata": "^0.1.12",
     "rollup": "^0.41.6",
     "rollup-plugin-alias": "^1.4.0",
@@ -29,8 +30,5 @@
     "tslint": "^5.9.1",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16"
-  },
-  "dependencies": {
-    "inversify": "^4.11.1"
   }
 }
