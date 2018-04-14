@@ -37,6 +37,9 @@ class SfcCompiler implements Compiler<ComponentOptions<Vue>> {
 
     return Promise.resolve({
       beforeCreate() {
+
+        // TODO:
+        // use global insert css helper
         const stlyeNode = document.createElement('style');
 
         stlyeNode.innerHTML = styles.join('\n');
