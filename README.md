@@ -21,9 +21,9 @@ import sfcLoader form 'vue-sfc-loader';
 
 sfcLoader
   .load('./exmaple.vue')
-  .then(componentOptions => {
+  .then(Example => {
     new Vue({
-      render: h => h(componentOptions);
+      render: h => h(Example);
     });
   });
 ```
