@@ -1,23 +1,30 @@
 # vue-sfc-loader
 > vue sfc loader for browser
 
-## Setup
+## Features
 
-```js
-# install deps
-npm install
++ Able to handle component importing other components.
++ Support CSS preprocessor [SSSA](https://github.com/differui/sssa).
+<!-- + Support scoped css. -->
 
-# build app
-npm run build
+## Install
 
-# build & watch app
-npm run watch
+```bash
+npm install vue-sfc-loader
+```
 
-# build & launch app
-npm run start
+## Usage
 
-# run unit test
-npm run test
+```javascript
+import sfcLoader form 'vue-sfc-loader';
+
+sfcLoader
+  .load('./exmaple.vue')
+  .then(componentOptions => {
+    new Vue({
+      render: h => h(componentOptions);
+    });
+  });
 ```
 
 ## License
