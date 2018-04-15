@@ -4,11 +4,13 @@ import Vue from 'vue';
 import { VueConfiguration } from 'vue/types/vue';
 import { ComponentOptions } from 'vue/types/options';
 import SssaCompiler from '@/core/compilers/sssa';
+import VueTemplateCompiler from '@/core/compilers/template';
 import IDENTIFIERS from '@/core/Identifiers';
 
 @injectable()
 class SfcCompiler implements Compiler<ComponentOptions<Vue>> {
   @inject(IDENTIFIERS.SSSA_COMPILER) sssaCompiler: SssaCompiler;
+  @inject(IDENTIFIERS.TEMPLATE_COMPILER) templateCompiler: VueTemplateCompiler;
 
   public async compile(source: string): Promise<ComponentOptions<Vue>> {
     const ast = parse(source);
@@ -34,6 +36,8 @@ class SfcCompiler implements Compiler<ComponentOptions<Vue>> {
     const styles = await Promise.all(promises);
     const script = ast.children.find(b => b.name === 'script');
     const template = ast.children.find(b => b.name === 'template');
+
+    console.log(this.templateCompiler.compile(template));
 
     return Promise.resolve({
       beforeCreate() {
