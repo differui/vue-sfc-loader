@@ -8,10 +8,11 @@
 + Support CSS preprocessor [SSSA](https://github.com/differui/sssa).
 + Support scoped css.
 
-## Install
+## Run the Demo
 
 ```bash
-npm install vue-sfc-loader
+npm install
+npm run start
 ```
 
 ## Usage
