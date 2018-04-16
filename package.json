@@ -28,7 +28,7 @@
     "rollup-watch": "^3.2.2",
     "serve": "^6.5.5",
     "sfc-parser": "^0.1.0",
-    "sssa": "^0.1.2",
+    "sssa": "^0.2.0",
     "tslint": "^5.9.1",
     "vue": "^2.5.16",
     "vue-template-compiler": "^2.5.16"
